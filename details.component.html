@@ -1,0 +1,32 @@
+<mat-toolbar class="überschrift" color="primary">
+  <mat-toolbar-row>
+    <span>Gökce's Rezeptbuchsammlung</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="home" aria-hidden="false" aria-label="Example home icon" routerLink="/start">home</mat-icon>
+    <span class="example-spacer2"></span>
+    <mat-icon class="einkaufswagen" aria-hidden="false" aria-label="shopping" routerLink="/einkaufskorb">shopping_cart</mat-icon>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br>
+
+
+<!-- hier werden alle Details angezeigt-->
+<mat-card class="detailss" >
+  <mat-card-title class="zname">Details: {{this.data.anzeigeDetails.name}}</mat-card-title>
+  <mat-card-content>
+    <p class="zbeschr" >{{this.data.anzeigeDetails.beschreibung}}</p>
+    <br>
+    <p class="zzub"> Zubereitung: <br> {{this.data.anzeigeDetails.zubereitung}}</p>
+    <br>
+    <p class="zut">  <br> {{this.data.anzeigeDetails.zutatenListe}}</p>
+  <!--  <p *ngFor="let zutat of this.data.anzeigeDetails.zutatenListe">{{zutat.zutatname}} {{zutat.kategorie}} {{zutat.menge}} {{zutat.einheit}}</p>
+-->
+
+    <p *ngFor="let z of this.data.zutatenListe.zutatenListe">{{z.zutatname}} {{z.menge}} {{z.einheit}}</p>
+  </mat-card-content>
+
+<br>
+  <button class="zurück" mat-raised-button color="warn" routerLink="/">Zurück</button>
+

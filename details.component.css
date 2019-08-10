@@ -1,0 +1,77 @@
+.detailss{
+  font-family: Geneva;
+  font-size: 25px;
+  background-size: 1500px;
+  height: 1500px;
+}
+
+.überschrift{
+  font-family: Geneva;
+  background-color: #8a5b91;
+  font-size: 40px;
+  height: 80px;
+}
+.zbeschr, .zzub, .zut{
+  font-family: Geneva;
+  font-size: 22px;
+  color: whitesmoke;
+  line-height: 180%;
+  ;
+}
+
+.zname{
+  font-family: Geneva;
+  font-size: 30px;
+}
+.zbeschr{
+  font-style: italic;
+}
+
+.zurück{
+  font-family: Geneva;
+  font-size: 25px;
+  background-color: #8a5b91;
+  border-style: solid;
+  border-color: #6e4974;
+  border-width: medium;
+  border-radius: 15px;
+}
+.zurück:hover{
+  background-color: #7a2468;
+}
+.einkaufswagen{
+  size: 45px;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  left: 1630px;
+  top: 1px;
+}
+.einkaufswagen:hover{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.home{
+  font-size: 45px;
+  color: white;
+  position: relative;
+  left: 1555px;
+  top: -3px;
+}
+
+.home:hover{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
