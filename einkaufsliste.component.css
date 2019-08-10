@@ -1,0 +1,44 @@
+.überschrift{
+  font-family: Geneva;
+  background-color: #8a5b91;
+  font-size: 40px;
+  height: 80px;
+}
+
+
+
+.einkaufswagen{
+  size: 45px;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  left: 1300px;
+  top: 1px;
+}
+.einkaufswagen:hover{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.home{
+  font-size: 45px;
+  color: white;
+  position: relative;
+  left: 1200px;
+  top: -3px;
+}
+
+.home:hover{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

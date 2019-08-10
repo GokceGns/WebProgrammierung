@@ -1,0 +1,135 @@
+form{
+  max-width: 25em;
+  margin: 1em auto;
+}
+
+.feld2{
+  width: 200px;
+}
+
+
+
+.maske{
+  top: 30px;
+  margin: 40px;
+  width: 1500px;
+  height: 1200px;
+  font-family: Geneva;
+}
+
+
+
+.überschrift2{
+  font-family: Geneva;
+  background-color: #8a5b91;
+  font-size: 40px;
+  height: 80px;
+}
+
+
+.einkaufswagen2{
+  size: 45px;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  left: 1640px;
+  top: -2px;
+}
+
+.einkaufswagen2:hover{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.home2{
+  font-size: 45px;
+  color: white;
+  position: relative;
+  left: 1570px;
+  top: -5px;
+}
+
+.home2:hover{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.hintergrund{
+  background-size: 500px;
+  height: 1500px;
+}
+
+
+
+.schritt1{
+  font-family: Geneva;
+  font-size: 30px;
+}
+
+.übersch, .beschr, .schritt2{
+  font-family: Geneva;
+  font-size: 22px;
+  width: 1500px;
+}
+
+
+.Zutatname, .Kategorie, .Einheit, .Menge{
+  font-family: Geneva;
+  font-size: 21px;
+  width: 373px;
+}
+
+
+.zhinzu , .zspeichern, .rezspeichern ,.zurück{
+  font-family: Geneva;
+  font-size: 25px;
+  background-color: #8a5b91;
+  border-style: solid;
+  border-color: #6e4974;
+  border-width: medium;
+  border-radius: 15px;
+}
+
+.zhinzu:hover, .zspeichern:hover, .rezspeichern:hover, .zurück:hover{
+  background-color: #7a2468;
+
+}
+
+.zspeichern{
+  font-family: Geneva;
+  position: relative;
+  top: 55px;
+}
+.rezspeichern{
+  font-family: Geneva;
+  position: relative;
+  left: 1220px;
+  top: 5px;
+  border-style: double;
+  border-color: #704667;
+  border-width: 6px;
+}
+.rezspeichern:hover{
+  font-family: Geneva;
+  background-color: #bc0e3f;
+  padding-top: 5px;
+}
+
+.zurück{
+  font-family: Geneva;
+  position: relative;
+  left: 800px;
+  top: 55px;
+}
+

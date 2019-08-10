@@ -1,0 +1,115 @@
+<mat-toolbar class="überschrift2" color="primary">
+  <mat-toolbar-row>
+    <span>Gökce's Rezeptbuchsammlung</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="home2" aria-hidden="false" aria-label="Example home icon" routerLink="/start">home</mat-icon>
+    <span class="example-spacer2"></span>
+    <mat-icon class="einkaufswagen2" aria-hidden="false" aria-label="shopping" routerLink="/einkaufskorb">
+      shopping_cart
+    </mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+<br>
+
+
+<mat-card class="hintergrund">
+  <mat-card class="maske">
+
+    <h4 class="schritt1">Schritt 1</h4>
+    <mat-form-field class="übersch">
+      <textarea Input [(ngModel)]="name" matInput type="text" placeholder="Name des Rezepts" rows="3"
+                cols="50"></textarea>
+    </mat-form-field>
+    <br><br><br>
+    <mat-form-field class="beschr">
+      <textarea Input [(ngModel)]="beschreibung" matInput placeholder="Beschreibung" rows="3" cols="50"></textarea>
+    </mat-form-field>
+
+
+    <br><br><br><br><br><br>
+
+
+    <h4 class="schritt1">Schritt 2</h4>
+    <mat-card-subtitle class="schritt2"> Zutaten hinzufügen</mat-card-subtitle>
+
+
+    <br>
+    <br>
+
+
+    <mat-form-field class="Zutatname">
+      <mat-label>Zutat</mat-label>
+      <select matNativeControl required [(ngModel)]="zutatname" disabled>
+        <option *ngFor="let zutaten of this.data.zutatenListe.zutatenListe"
+                [value]="zutaten.zutatname">{{zutaten.zutatname}}</option>
+      </select>
+
+    </mat-form-field>
+
+
+    <mat-form-field class="Kategorie">
+      <mat-label>Kategorie</mat-label>
+      <select matNativeControl required [(ngModel)]="kategorie" disabled>
+        <option *ngFor="let zutaten of this.data.zutatenListe.zutatenListe"
+                [value]="zutaten.kategorie">{{zutaten.kategorie}}</option>
+      </select>
+    </mat-form-field>
+
+
+    <mat-form-field class="Menge">
+      <mat-label>Menge</mat-label>
+      <select matNativeControl required [(ngModel)]="menge" disabled>
+        <option *ngFor="let zutaten of this.data.zutatenListe.zutatenListe"
+                [value]="zutaten.menge">{{zutaten.menge}}</option>
+      </select>
+    </mat-form-field>
+
+    <mat-form-field class="Einheit">
+      <mat-label>Einheit</mat-label>
+      <select matNativeControl required [(ngModel)]="einheit" disabled>
+        <option *ngFor="let zutaten of this.data.zutatenListe.zutatenListe"
+                [value]="zutaten.einheit">{{zutaten.einheit}}</option>
+      </select>
+    </mat-form-field>
+
+
+    <!--
+    <br>
+    <mat-form-field class="Einheit">
+      <mat-label>Einheit</mat-label>
+      <textarea [(ngModel)]="einheit" matInput type="text" placeholder="Einheit" value="einheit"></textarea>
+    </mat-form-field>
+    -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <span class="example-spacer"></span>
+    <button class="zhinzu" mat-raised-button color="primary" (click)="openDialog()"
+            matTooltip="Bitte Speichern Sie die neu erstellte Zutat unter  'Zutat Speichern'"> Neue Zutat hinzufügen
+    </button>
+    <br>
+
+
+    <button class="zspeichern" mat-raised-button color="primary"
+            (click)="zutatspeichern(zutatname, kategorie, menge, einheit)"
+            matTooltip="Bitte Speichern Sie die neu erstellte Zutat">Zutat
+      Speichern
+    </button>
+
+    <button class="zurück" mat-raised-button color="primary" routerLink="/">Zurück</button><br>
+
+    <button class="rezspeichern" mat-raised-button color="primary" routerLink="/start"
+            (click)="speichern(name, beschreibung, zuListe, zubereitung, bild)">Rezept Speichern
+    </button>
+    <br>
+  </mat-card>
+</mat-card>
+
+
+<br>
+<br>
+<br>
