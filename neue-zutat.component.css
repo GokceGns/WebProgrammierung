@@ -1,0 +1,38 @@
+.maske{
+  font-family: Geneva;
+  width: 500px;
+  padding: 30px;
+  height: 550px;
+}
+.zname, .Kategorie, .Menge, .Einheit{
+  font-family: Geneva;
+  font-size: 22px;
+  width: 450px;
+}
+.text1{
+  font-family: Geneva;
+  font-size: 22px;
+}
+.text{
+  font-family: Geneva;
+  font-size: 25px;
+}
+
+.hinz, .abbr{
+  font-family: Geneva;
+  font-size: 25px;
+  background-color: #8a5b91;
+  border-style: solid;
+  border-color: #6e4974;
+  border-width: medium;
+  border-radius: 15px;
+}
+.hinz{
+  position: relative;
+  left: 90px;
+}
+
+.hinz:hover, .abbr:hover{
+  background-color: #7a2468;
+
+}

@@ -1,0 +1,43 @@
+<h2 mat-dialog-title class="text">Neue Zutat</h2>
+
+<mat-dialog-content>
+  <p class="text1">Hier können Sie eine neue Zutat hinzufügen</p>
+</mat-dialog-content>
+
+
+<mat-card class="maske">
+
+  <mat-form-field class="zname">
+    <textarea [(ngModel)]="zutatname" matInput type="text" placeholder="Zutat" value="zutatname"></textarea>
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="Kategorie">
+    <mat-label>Kategorie</mat-label>
+    <textarea [(ngModel)]="kategorie" matInput type="text" placeholder="Zutat" value="kategorie"></textarea>
+  </mat-form-field>
+
+  <br>
+
+
+  <mat-form-field class="Menge">
+    <textarea [(ngModel)]="menge" matInput type="text" placeholder="Menge" value="menge"></textarea>
+  </mat-form-field>
+
+
+  <br>
+  <mat-form-field class="Einheit">
+    <textarea [(ngModel)]="einheit" matInput type="text" placeholder="Einheit" value="einheit"></textarea>
+  </mat-form-field>
+
+  <br><br><br>
+
+
+  <button class="abbr" type="button" id="zurück" color="primary" mat-raised-button routerLink="/neuesR"
+          onclick="alert('Zutat wurde nicht hinzugefügt')" [mat-dialog-close]="zutatname">Abbrechen
+  </button>
+  <button class="hinz" type="button" id="neu" color="primary" mat-raised-button  matTooltip="Zutat hinzufügen"
+          (click)="speichern(zutatname, kategorie, menge, einheit)" onclick="alert('Neue Zutat wurde hinzugefügt')">
+    Hinzufügen
+  </button>
+

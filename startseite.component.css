@@ -1,0 +1,157 @@
+a{
+  font-family: Geneva;
+  color: rebeccapurple;
+}
+
+form{
+  max-width: 25em;
+  margin: 1em auto;
+}
+
+
+.überschrift{
+  font-family: Geneva;
+  background-color: #8a5b91;
+  font-size: 40px;
+  height: 80px;
+}
+
+.example-spacer {
+  flex: 1 100%;
+}
+.example-spacer2 {
+  flex: 1 8%;
+}
+
+.einkaufswagen{
+  size: 45px;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  right: 55px;
+}
+
+.einkaufswagen:hover{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.home{
+  font-size: 45px;
+  color: white;
+  position: relative;
+  top: -3px;
+}
+
+.home:hover{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.heart{
+  font-size: 33px;
+  color: #d21440;
+  position: relative;
+  left: 400px;
+  top: 8px;
+
+}
+
+.hinzufügen{
+  color: white;
+  font-size: 30px;
+  background-color: maroon;
+}
+
+
+.detailsButton{
+  position: relative;
+  left: 40px;
+}
+
+.ek2{
+  font-size: 30px;
+  position: relative;
+  left: 450px;
+  bottom: -7px;
+}
+
+.ek2:hover{
+  animation: blinker 1s linear infinite;
+
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.zname{
+  font-family: Geneva;
+  font-size: 25px;
+  color: white;
+}
+.rbeschreibung{
+  font-family: Geneva;
+  font-size: 20px;
+}
+
+.anzeige {
+  border-style: solid;
+  border-color: lightgray;
+  border-width: thick;
+  border-radius: 20px;
+  display: inline-block;
+  width: 550px;
+  height: 400px;
+  padding-right: 20px;
+}
+.anzeige:hover{
+  margin: 0 0 0 30px;
+}
+
+.anzeige + .anzeige{
+  padding-left: 20px;
+}
+
+.hintergrund{
+  background-size: 400px;
+  height: 1500px;
+  background-color: lightgray;
+}
+
+
+
+.detailsButton, .neuesR{
+  font-family: Geneva;
+  font-size: 20px;
+  background-color: #8a5b91;
+  border-style: solid;
+  border-color: #6e4974;
+  border-width: medium;
+  border-radius: 10px;
+}
+
+.detailsButton{
+  position: relative;
+  left: -45px;
+}
+.neuesR{
+  position: relative;
+  left: -30px;
+}
+
+.detailsButton:hover, .neuesR:hover, .ek2:hover{
+  background-color: #7a2468;
+}
